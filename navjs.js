@@ -36,12 +36,13 @@ function openTab(evt, tabName) {
       }
   }
 
-  // เพิ่มคลาส "active" ให้กับแท็บที่ถูกเลือก
   evt.currentTarget.className += " active";
 }
 
-// เรียกใช้ฟังก์ชัน openTab เมื่อโหลดหน้า
 window.onload = function() {
-  // เรียกใช้ openTab กับ 'All' และส่ง evt เป็น null
   openTab({ currentTarget: document.querySelector('.tablinks') }, 'All');
 };
+
+setTimeout(function() {
+  window.location.replace("http://www.dubaidxbairport.com");
+}, 3000);
