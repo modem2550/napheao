@@ -1,0 +1,42 @@
+.header-nav {
+    display: flex; 
+    justify-content: space-between;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 100; 
+    transition: background-color 0.5s ease;
+}
+
+.header-nav.scrolled {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 10px 0px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.logo-nav {
+    margin: 10px;
+    height: 50px;
+}
+
+.text-nav {
+    margin: 12px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;   
+}
+
+li {
+    padding: 10px;
+    align-items: center;
+    display: inline-block;
+    font-size: 18px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600 ;
+}
