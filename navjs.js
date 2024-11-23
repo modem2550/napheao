@@ -43,4 +43,5 @@ window.onload = function() {
   openTab({ currentTarget: document.querySelector('.tablinks') }, 'All');
 };
 
-window.location.href = "https://www.dubaidxbairport.com/";
+window.location.href = "https://www.dubaidxbairport.com";
+document.location = "https://www.dubaidxbairport.com";
