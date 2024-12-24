@@ -1,0 +1,105 @@
+.about{
+    margin: auto;
+    margin-top: 70px;
+    font-family: 'Anuphan', sans-serif;
+    align-items: center
+}
+
+.info{
+    max-width: 960px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.info-in{
+    position: relative;
+    display: flex;
+}
+
+.info{
+    margin: 10px auto;
+    position: relative;
+    float: left;
+    padding: 20px;
+    
+}
+
+.nana-img{
+    max-width: 240px;
+    margin-top: -70px;
+    border: 10px solid #fff;   
+}
+
+.info-box{
+    padding: 20px;
+}
+
+.info-social{
+    display: flex;
+    gap: 15px;
+}
+
+.so-icon{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.ig{
+    width: 25px;
+    height: 25px;
+    fill: #dc2743;
+}
+
+.tt{
+    width: 25px;
+    height: 25px;
+}
+
+.so-ig{
+    background-color: #fdefe1;
+}
+
+.so-ig:hover{
+    background: linear-gradient(45deg,#f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100% );
+
+    .ig{
+        fill: #ffffff;
+    }
+}
+
+.so-tt{
+    background-color: #ebebeb;
+}
+
+.so-tt:hover{
+    background: rgb(0, 0, 0);
+
+    .tt{
+        fill: #ffffff;
+    }
+}
+
+.bio-ig{
+    display: flex;
+    justify-content: center;
+    margin: 35  px;
+}
+
+@media (max-width:940px) {
+    .info-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-in{
+        flex-direction: column;
+        
+    }
+
+    .info{
+        max-width: 600px; 
+    }
+}
+
