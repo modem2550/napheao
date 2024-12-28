@@ -279,6 +279,7 @@ blockquote{
 @media (max-width: 940px) {
     .info {
         max-width: 560px;
+        height: 500px;
     }
 
     .head-embed {
@@ -303,6 +304,7 @@ blockquote{
 
     .iframe {
         max-width: 600px;
+        width: 100%;
     }
 
     .instagram-media{
