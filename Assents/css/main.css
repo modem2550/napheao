@@ -15,7 +15,6 @@ html body{
     display: grid;
     align-items: end;
     transition: 0.3s;
-    min-height: 600px;
     height: 100vh;
 }
 
