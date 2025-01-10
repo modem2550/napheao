@@ -5,25 +5,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="google-site-verification" content="nVWvhyIP60uv985UsYOMtwbOjNhvWyVoHaxPBdwnfzc" />
+        <meta name="google-site-verification" content="nVWvhyIP60uv985UsYOMtwbOjNhvWyVoHaxPBdwnfzc"/>
+        <script src="gtag.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0Z33JHV91"></script>
+
         <meta name="description" content="Fan Website Nana - Nana Goto">
-	<meta property="og:locale" content="th_TH">
+	    <meta property="og:locale" content="th_TH">
     	<meta property="og:type" content="website">
-	<meta property="og:title" content="Nana Goto - Fan Website">
+	    <meta property="og:title" content="Nana Goto - Fan Website">
     	<meta property="og:description" content="Fan Website for Nana Goto">
-	<meta property="og:url" content="https://napheao-s.vercel.app/">
+	    <meta property="og:url" content="https://napheao-s.vercel.app/">
     	<meta property="og:site_name" content="Nana Goto - Fan Website">
-	<meta property="og:image" content="https://img2.pic.in.th/pic/S__6054014_0519b8216ee28abcc.jpg">
+	    <meta property="og:image" content="https://img2.pic.in.th/pic/S__6054014_0519b8216ee28abcc.jpg">
     	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
+	    <meta property="og:image:height" content="630">
     	<meta property="og:image:type" content="image/jpeg">
-	<meta name="twitter:title" content="Nana Goto - Fan Website">
+	    <meta name="twitter:title" content="Nana Goto - Fan Website">
     	<meta name="twitter:description" content="Fan Website for Nana - Nana Goto">
-	<meta name="twitter:image" content="https://img2.pic.in.th/pic/S__6054014_0519b8216ee28abcc.jpg">
-    	<meta name="twitter:card" content="summary_large_image">
+	    <meta name="twitter:image" content="https://img2.pic.in.th/pic/S__6054014_0519b8216ee28abcc.jpg">
+	    <meta name="twitter:card" content="summary_large_image">
         
         <meta name="apple-mobile-web-app-title" content="Nana Goto - Fan Website">
-	<meta name="application-name" content="Nana Goto - Fan Website">
+	    <meta name="application-name" content="Nana Goto - Fan Website">
         <meta name="keywords" content="Nana Goto, Fan Website, นานา โกโตะ, Idol, Japan, นานา, แฟนคลับ">
 
 
@@ -43,26 +46,37 @@
             </a>
             <div class="text-nav">
                 <nav>
+                     <ul class="sidebar" style="margin: 0;">
+                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#social">Social</a></li>
+                        <li><a href="#photo">Photo</a></li>
+                        <li><a href="https://naphaeo-s-photo.vercel.app/">Gallery</a></li>
+                        <li><a href="/Shop">Shop</a></li>
+                    </ul>
+
                     <ul>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#social">Social</a>
-                        </li>
-                        <li>
-                            <a href="https://naphaeo-s-photo.vercel.app/">Photo</a>
-                        </li>
-                        <li>
-                            <a href="/Shop">Shop</a>
-                        </li>
+                        <li><a href="#about" class="hideOnMobile">About</a></li>
+                        <li><a href="#social" class="hideOnMobile">Social</a></li>
+                        <li><a href="#photo" class="hideOnMobile">Photo</a></li>
+                        <li><a href="https://naphaeo-s-photo.vercel.app/" class="hideOnMobile">Gallery</a></li>
+                        <li><a href="/Shop" class="hideOnMobile">Shop</a></li>
+                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <section class="top-nana" style="background-image: url(https://img2.pic.in.th/pic/Artboard-165d147ded2aafb82.png);" id="top-img"></section>
+            <section class="top-nana" style="background-image: url(https://img2.pic.in.th/pic/Artboard-165d147ded2aafb82.png);" id="top-img">
+                <div class="top-text">
+                    <H1 class="name-top-text">Nana Goto</H1>
+                    <button class="tread-x" data-bs-target="#staticBackdrop" onclick="window.open('https://twitter.com/intent/tweet?openExternalBrowser=1&amp;text=แนะไอ้คนขี้เก๋%0A%0A%23NanaGoto', '_blank');">Trend X #NanaGoto</button>
+                </div>
+            </section>
             <section class="about" id="about">
+                <div class="social-head">
+                    <h1>About</h1>
+                </div>
                 <div class="info">
                     <div>
                         <div class="circles">
@@ -106,7 +120,6 @@
                 <div class="social-head">
                     <h1>Social</h1>
                     ช่องทางติดตามนานา
-                
                 </div>
                 <div class="head-embed">
                     <div class="iframe">
@@ -201,7 +214,7 @@
                     </div>
                 </div>
             </section>
-            <section class="photo">
+            <section class="photo" id="photo">
                 <div class="social-head">
                     <H1>Photo</H1>
                     รูปภาพสายๆ จากเพจต่างๆ
