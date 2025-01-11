@@ -13,7 +13,7 @@
 .box-img img {
   height: 100%;
   width: 100%;
-  transform: scale(1.02);
+  transform: scale(1.05);
   transition: transform 0.4s ease;
 }
 
@@ -21,10 +21,10 @@
   box-sizing: content-box;
   margin-bottom: 15px;
   margin-top: 10px;
-  overflow: hidden;
   color: white;
   position: relative;
   background-color: white;
+  overflow: hidden;
   border-radius: 8px;
 }
 
