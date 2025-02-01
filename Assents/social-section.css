@@ -1,0 +1,346 @@
+.social{
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.head-embed {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.iframe {
+    width:50%; 
+    margin-bottom: 20px;
+}
+
+.iframe-instagram, .iframe-tiktok {
+    width: 100%; 
+}
+
+.social-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+blockquote{
+    margin: 0;
+}
+
+.instagram-media{
+    background-color: white; 
+    border-radius: 6px; 
+    border: 1px solid rgb(227, 227, 228); 
+    box-shadow: none; 
+    display: block; 
+    margin: 0px; 
+    width: 100%; 
+    padding: 0px; 
+    height: 458px;
+}
+
+/* Fan button */
+.all-botton {
+    display: flex; 
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.botton {
+    flex: 1; 
+    display: flex; 
+    justify-content: center;  
+}
+
+.fan-sigh svg {
+    margin: 15px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+}
+
+.fan-sigh{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.line-social .fan-sigh{
+    flex-direction: column
+}
+
+.discord-social .fan-sigh{
+    flex-direction: column
+}
+
+.text-social{
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+.collum-social .botton{
+    width: 100%;
+    gap: 10px;
+}
+
+.img-qr{
+    margin: 6%;
+    width: 90%;
+}
+
+/*Facebook*/
+.fb-social {
+    background-color: #d2e4fc;
+    width: 100%; 
+    border-radius: 10px; 
+    transition: background-color 0.3s ease;
+
+    svg{
+        fill: rgb(25, 118, 241);
+    }
+
+    .fb-text{
+        color: rgb(25, 118, 241);
+    }
+}
+
+.fb-social:hover {
+    background-color: #1877F2;
+
+    svg{
+        fill: rgb(255, 255, 255);
+    }
+
+    .fb-text{
+        color: rgb(255, 255, 255);
+    }
+}
+
+/*Instargram*/
+.ig-social {
+    position: relative;
+    background-color: #f8d0d6;
+    width: 100%; 
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+
+    svg{
+        fill: rgb(220, 39, 67);
+    }
+
+    .ig-text{
+        color: rgb(220, 39, 67);
+    }
+}
+
+.ig-social::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.ig-social:hover{
+    svg{
+        fill: #ffffff;
+    }
+
+    .ig-text{
+        color: #ffffff;
+    }
+}
+
+.ig-social:hover::after {
+    opacity: 1;
+}
+
+.ig-social > * {
+    position: relative;
+    z-index: 2;
+}
+
+/*X*/
+.x-social {
+    background-color:#ebebeb;
+    width: 100%; 
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+
+    svg{
+        fill: rgb(0, 0, 0);
+    }
+
+    .x-text{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.x-social:hover{
+    background-color: #000000;
+
+    svg{
+        fill: rgb(255, 255, 255);
+    }
+
+    .x-text{
+        color: rgb(255, 255, 255);
+    }
+}   
+
+.collum-social{
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/*line*/
+.line-social {
+    background-color:#bbfdd6;
+    width: 100%; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
+    .line-text{
+        color: rgb(6, 199, 85);
+    }
+}
+
+.line-social:hover{
+    background-color: #06c755;
+
+    .line-text{
+        color: rgb(255, 255, 255);
+    }
+}
+
+.cls-1{
+    fill:#06c755;
+}
+
+.cls-2{
+    fill:#fff;
+}
+
+/*discord*/
+.discord-social {
+    background-color:#d7dafc;
+    width: 100%; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
+    .discord-text{
+        color: #5865f2;
+    }
+}
+
+.discord-social:hover{
+    background-color: #5865f2;
+
+    .discord-text{
+        color: rgb(255, 255, 255);
+    } 
+}  
+
+.discord-social .fan-sigh svg{
+    height: 50px;
+    width: 50px;
+    fill: #5865F2;
+}
+
+.discord-social:hover svg {
+    fill: rgb(255, 255, 255); 
+}
+
+/* Media Queries */
+@media (max-width: 940px) {
+    .ipedled{
+        max-width: 600px;
+    }
+
+    .info {
+        max-width: 560px;
+        height: 500px;
+    }
+
+    .head-embed {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-embed {
+        width: 100%; 
+        max-width: 600px; 
+    }
+
+    .botton {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .all-botton {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iframe {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .instagram-media{
+        width: 100%;
+    }
+
+    .collum-social{
+        max-width: 600px;
+    }
+
+    .discord-social .fan-sigh svg{
+        display: none;
+    }
+
+    .line-social .fan-sigh svg{
+        display: none;
+    }
+
+    .instagram-media{
+        max-height: 370.49px;
+    }
+}
+
+@media (min-width:940px) {
+    .img-qr{
+        display: none;
+    }
+}
+
+@media (max-width:640px) {
+    .ipedled {
+        max-width: 100%;
+    }
+}

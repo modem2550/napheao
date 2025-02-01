@@ -1,0 +1,163 @@
+/*page-1*/
+
+.header-nav.scrolled {
+    background-color: white;
+    box-shadow: 0 1px 2px var(--shadow-2);
+    position: fixed;
+}
+
+.page-screen{
+    padding: 20px;
+    justify-content: center;
+}
+
+.svg-button{
+    background: none;
+    border: none;
+    width: 50px;
+}
+
+.container div ul li{
+    display: block;
+}
+   
+.product{
+    background-color: #ffffff;
+    width: 300px;
+    height: 400px;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px #00000014;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.detail{
+    width: 100%;
+}
+
+.detial-cart{
+    display: flex;
+    flex-direction: row-reverse;
+    margin : 15px;
+    margin-top: 0;
+    width: 90%;
+}
+
+.product-picture{
+    img{
+        margin: 15px;
+        width: 270px;
+        height: 300px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+}
+
+.out-frame{
+    display: inline-block;
+}
+
+.frame-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-tab{
+    display: flex;
+    width: 100%;
+    justify-content: space-between
+}
+
+.row-product, .oncart{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1290px;
+}
+
+.oncart, .face-product{
+    padding: 20px;
+}
+
+@media (max-width:1370px) {
+    .row-product, .oncart, .your{
+        width: 960px;
+    }
+}
+
+@media (max-width:1000px) {
+    .row-product, .oncart, .your{
+        width: 630px;
+    }
+}
+
+@media (max-width:670px) {
+    .row-product, .oncart, .your{
+        width: 300px;
+    }
+}
+
+@media (min-width:1351px) {
+    .oncart, .your{
+        width: 100%;
+    }
+}
+
+/*---------------------------*/
+
+/*page-2*/
+
+.your{
+    max-width: 1290px;
+    padding: 20px;
+}
+
+.space{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cart{
+    margin: 0;
+}
+
+#cart li{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.cart-item{
+    display: flex;
+    background-color: none;
+}
+
+.cart-item:hover{
+    background-color: #f2f4f7;
+}
+
+.cart-item-image{
+    width: 100px;
+}
+
+.size-select{
+    height: fit-content;
+}
+
+.product-info{
+    display: flex;
+}
+
+.cart-item-text{
+    margin-left: 10px;
+}

@@ -1,0 +1,90 @@
+header{
+    height: 60px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    transition: background-color 0.5s ease;
+}
+
+.header-nav.scrolled {
+    background-color: white;
+    box-shadow: 0 1px 2px var(--shadow-2);
+}
+
+.logo-nav{
+    margin: 10px;
+    width: 40px;
+}
+
+.text-nav{
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+ul{
+    margin: 10px;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+    margin: 3px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background: noen;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
