@@ -1,5 +1,35 @@
+main{
+    margin-top: 70px;
+}
+
+.site-header .n-toggle b{
+    background-color: var(--bs-body-color); /* เปลี่ยนสีขีดในปุ่ม hamburger */
+}
+
+.site-header .n-toggle b::before {
+    background-color: var(--bs-body-color); /* เปลี่ยนสีขีดในปุ่ม hamburger */
+}
+
+.site-header .n-toggle b::after {
+    background-color: var(--bs-body-color); /* เปลี่ยนสีขีดในปุ่ม hamburger */
+}
+
+.n-header a{
+    color: var(--bs-body-color);;
+}
+
+.site-header .svgicon path {
+  fill: var(--bs-body-color);
+}
+
+.title-shop{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
 .frame-gallery{
-  max-width: 1480px;
+  max-width: 1280px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -9,6 +39,7 @@
 .gallery-image {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
   
 .gallery-image img {
@@ -21,15 +52,15 @@
 .img-box {
   box-sizing: content-box;
   margin: 10px;
-  height: 250px;
-  width: 350px;
+  height: 225px;
+  width: 300px;
   overflow: hidden;
   display: inline-block;
   color: white;
   position: relative;
   background-color: white;
   animation: fadeEffect 1s;
-  border-radius: 8px;
+  border-radius: 12px;
 }
   
 .img-box img{
@@ -45,15 +76,16 @@
   opacity: 0.0;
   transition: transform 0.3s ease, opacity 0.3s ease;
   color: #ffffff;
-  
-  p{
-    font-weight: 500;
-  }
+}
+
+.caption p {
+  font-weight: 500;
+  color: #fff;
 }
   
 .transparent-box {
-  height: 250px;
-  width: 350px;
+  height: 225px;
+  width: 300px;
   background-color:rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
@@ -109,13 +141,15 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 12px 14px;
   transition: 0.3s;
   font-size: 17px;
+  border-radius: 12px;
 }
   
 .tab button:hover {
   background-color: #ddd;
+  border-radius: 12px;
 }
 
 .tabcontent {
@@ -123,14 +157,7 @@
   border-top: none;
 }
 
-@media (max-width:1480px) {
-  .frame-gallery{
-    max-width: 1110px;
-  }
-}
-
-
-@media (max-width:1110px) {
+@media (max-width:1280px) {
   .frame-gallery{
     max-width: 740px;
   }
@@ -143,7 +170,7 @@
 }
 
 .unset{
-    height: 63vh;
+    height: 68.5vh;
 }
 
 button .tablinks::selection{
