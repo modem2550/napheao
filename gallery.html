@@ -2,86 +2,295 @@
 <html lang="en">
     <head>
         <title>Baby Naphaeo's | Gallery</title>
-        <title>Baby Naphaeo's</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta name="google-site-verification" content="aH9mBvHjiMbT-Wk0pnrWMzYw4P40qCbgnTrgn1Ri78I" />
-        <meta name="google-site-verification" content="nVWvhyIP60uv985UsYOMtwbOjNhvWyVoHaxPBdwnfzc"/>
-        <script src="gtag.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0Z33JHV91"></script>
-
-        <meta name="description" content="Fan Website Nana - Nana Goto">
-        <meta property="og:locale" content="th_TH">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Nana Goto - Fan Website">
-        <meta property="og:description" content="Fan Website for Nana Goto">
-        <meta property="og:url" content="https://napheao.vercel.app/Gallery.html">
-        <meta property="og:site_name" content="Nana Goto - Fan Website">
-        <meta property="og:image" content="https://img2.pic.in.th/pic/S__6054014_0519b8216ee28abcc.jpg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
-        <meta property="og:image:type" content="image/jpeg">
-        <meta name="twitter:title" content="Nana Goto - Fan Website">
-        <meta name="twitter:description" content="Fan Website for Nana - Nana Goto">
-        <meta name="twitter:image" content="https://img2.pic.in.th/pic/S__6054014_0519b8216ee28abcc.jpg">
-        <meta name="twitter:card" content="summary_large_image">
         
-        <meta name="apple-mobile-web-app-title" content="Nana Goto - Fan Website">
-        <meta name="application-name" content="Nana Goto - Fan Website">
-        <meta name="keywords" content="Nana Goto, Fan Website, นานา โกโตะ, Idol, Japan, นานา, แฟนคลับ">
+        <link rel="stylesheet" href="Assests/css/header.css">
+        <link rel="stylesheet" href="Assests/css/main.css">
+        <link rel="stylesheet" href="Assests/css/footer.css">
+        <link rel="stylesheet" href="Assests/css/gallery.css">
+        
+        <script src="Assests/js/script-galley.js"></script>
 
-        <link rel="stylesheet" href="Assents/css/header.css">
-        <link rel="stylesheet" href="Assents/css/main.css">
-        <link rel="stylesheet" href="Assents/css/footer.css">
-        <link rel="stylesheet" href="Assents/css/gallery.css">
-	    
-        <script src="Assents/js/navjs.js" defer></script>
         <link rel="icon" type="image/png" href="https://img2.pic.in.th/pic/New-Project-5890d0a7e56ea7e59.png">
     </head>
     <body>
-        <header class="header-nav">
-            <a href="/index.html">
-                <img src="https://img2.pic.in.th/pic/IMG_7595.png" class="logo-nav" alt="Logo-Naphaeo">
-            </a>
-            <div class="text-nav">
-                <nav>
-                    <ul class="sidebar" style="margin: 0;">
-                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-                        <li><a href="/index.html#about">About</a></li>
-                        <li><a href="/index.html#social">Social</a></li>
-                        <li><a href="/index.html#photo">Photo</a></li>
-                        <li><a href="/Gallery.html">Gallery</a></li>
-                        <li><a href="/Shop">Shop</a></li>
-                    </ul>
+        <header class="site-header">
+            <div class="n-header">
+                <a class="n-branding" href="/">
+                    <img src="https://img2.pic.in.th/pic/Nas-Phou.png" class="logo-header-nav" id="logo-header">
+                </a>
 
-                    <ul>
-                        <li><a href="/index.html#about" class="hideOnMobile">About</a></li>
-                        <li><a href="/index.html#social" class="hideOnMobile">Social</a></li>
-                        <li><a href="/index.html#photo" class="hideOnMobile">Photo</a></li>
-                        <li><a href="/Gallery.html" class="hideOnMobile">Gallery</a></li>
-                        <li><a href="/Shop" class="hideOnMobile">Shop</a></li>
-                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                <div class="n-backdrop"></div>
+                <nav class="n-manu">
+                    <ul class="n-manu-ul">
+                        <li><a class="nav-text" href="/">Home</a></li>
+                        <li><a class="nav-text" href="/#info">About</a></li>
+                        <li><a class="nav-text" href="/#social">Social</a></li>
+                        <li><a class="nav-text" href="/#library">Library</a></li>
+                        <hr class="d-lg-none">  
+                        <li><a class="nav-text" href="/gallery.html">
+                            <svg class="svgicon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier"> 
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.46447 3.46447C2 4.92893 2 7.28595 2 12C2 16.714 2 19.0711 3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.0711 2 16.714 2 12 2C7.28595 2 4.92893 2 3.46447 3.46447ZM16 10C17.1046 10 18 9.10457 18 8C18 6.89543 17.1046 6 16 6C14.8954 6 14 6.89543 14 8C14 9.10457 14.8954 10 16 10ZM6.32092 13.1038C6.94501 12.5241 7.91991 12.5566 8.50397 13.1766L11.1515 15.9869C11.9509 16.8356 13.2596 16.9499 14.1941 16.2527C14.8073 15.7953 15.661 15.8473 16.2141 16.3757L18.4819 18.5423C18.7814 18.8284 19.2562 18.8176 19.5423 18.5181C19.8284 18.2186 19.8176 17.7438 19.5181 17.4577L17.2503 15.2911C16.1679 14.257 14.4971 14.1553 13.2972 15.0504C12.9735 15.2919 12.5202 15.2523 12.2433 14.9584L9.59579 12.1481C8.44651 10.9281 6.52816 10.8641 5.3001 12.0047L4.4896 12.7575C4.1861 13.0394 4.16858 13.5139 4.45047 13.8174C4.73236 14.1209 5.20691 14.1385 5.51041 13.8566L6.32092 13.1038Z" fill="#ffffff"></path> 
+                                </g>
+                            </svg>
+                            Gallery
+                        </a></li>
                     </ul>
                 </nav>
-            </div>
+                <nav class="n-action">
+                    <button class="n-toggle">
+                        <b></b>
+                    </button>
+                </nav>
+            </div> 
         </header>
 
         <main>
-            <h1 class="title-shop" style="display: flex; justify-content: center; margin: 30px;">Gallery</h1>
+            <h1 class="title-shop" style="display: flex; justify-content: center; margin: 0px;">Gallery</h1>
             <div class="frame-gallery">
                 <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'All')">All</button>
-                    <button class="tablinks" onclick="openTab(event, 'cosplay')">Cosplay</button>
-                    <button class="tablinks" onclick="openTab(event, 'formal')">Formal</button>
-                    <button class="tablinks" onclick="openTab(event, '365')">365</button>
-                    <button class="tablinks" onclick="openTab(event, 'neko')">Neko Wars</button>
-                    <button class="tablinks" onclick="openTab(event, 'event')">Event</button>
-                    <button class="tablinks" onclick="openTab(event, 'songkran')">Songkran</button>
-                    <button class="tablinks" onclick="openTab(event, 'mutsuri')">Mutsuri</button>
+                    <button class="tablinks" onclick="openTab(Event, 'All')">All</button>
+                    <button class="tablinks" onclick="openTab(Event, 'cosplay')">Cosplay</button>
+                    <button class="tablinks" onclick="openTab(Event, 'formal')">Formal</button>
+                    <button class="tablinks" onclick="openTab(Event, 'Event')">Event</button>
+                    <button class="tablinks" onclick="openTab(Event, '365')">365-nichi no Kamihikouki</button>
+                    <button class="tablinks" onclick="openTab(Event, 'neko')">Neko Wars</button>
+                    <button class="tablinks" onclick="openTab(Event, 'songkran')">Songkran</button>
                 </div>
                 <div class="unset"></div>
                 <div class="gallery-image">
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/1F86mEsmXr/">                                
+                            <img src="https://img2.pic.in.th/pic/496332182_1395455515481369_1055771067502064218_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By หมีแบกกล้อง</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/1Hjh1yC25U/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/495997894_1273584724135680_1863106464258013337_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By ฮจก.</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/16bydr3hw6/">                                
+                            <img src="https://img2.pic.in.th/pic/495610484_122234702522231359_8686758389045940800_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By Little nemo of niya</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/1AQLBX84is/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/497639985_1239915258136659_1114341147881495607_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By K’Nin Photo</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/1FvFvaYWu7/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/495733767_1364710948050570_3979818761429907763_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By Mr.Aunn</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/1GPDyDsYHw/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/495206320_122240276828225947_4597123365116261732_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By Baby Naphaeo's</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/1GzySVrnSB/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/495681591_122240288420225947_5345566113569637779_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By Baby Naphaeo's</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/1AJm26dvxa/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/497521954_1396411288719125_1621159881551526761_nfb14c0948b5468ea.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By หมีแบกกล้อง</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/16WsttsKo5/">                                
+                            <img src="https://img2.pic.in.th/pic/498196855_1367693841085614_388919932337136836_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By Mr.Aunn</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/1Bi2CsSVBn/">                                
+                            <img src="https://img2.pic.in.th/pic/498303764_1575329196717518_7155180876126070548_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>Niya Birthday Stage</p>
+                                    <p class="opacity-low">By คนเถื่อนเรือน BNK</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/12JiKNCGVP1/">                                
+                            <img src="https://img2.pic.in.th/pic/493906609_1211266764331777_2686976410211365087_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>BNK48 & CGM48 Fan Festival 2025</p>
+                                    <p class="opacity-low">By Baby Tiger Cave</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/19BSm7cug9/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/486072382_17899356510163945_8217685930853851936_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>BNK48 & CGM48 Fan Festival 2025</p>
+                                    <p class="opacity-low">By Baby Tiger Cave</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/19Sey97sNk/">                                
+                            <img src="https://img2.pic.in.th/pic/486414767_122222585492231359_3331188057190477907_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>BNK48 & CGM48 Fan Festival 2025</p>
+                                    <p class="opacity-low">By Little nemo of niya</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/19Sey97sNk/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/486369225_1348923613467893_4263420197389248591_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>BNK48 & CGM48 Fan Festival 2025</p>
+                                    <p class="opacity-low">By หมีแบกกล้อง</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+                    
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/15DQv2xc5L/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/486323328_122227703000225947_4428309168608948083_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>BNK48 & CGM48 Fan Festival 2025</p>
+                                    <p class="opacity-low">By Baby Naphaeo's</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/1CFBPgkTvV/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/492539665_1108300894648943_3848377617528645518_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>BNK48 & CGM48 Fan Festival 2025</p>
+                                    <p class="opacity-low">By PYN. Gallery</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/19QNGWBETZ/">                                
+                            <img src="https://img2.pic.in.th/pic/497594955_1326694249229137_703466020162473240_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>BNK48 & CGM48 Fan Festival 2025</p>
+                                    <p class="opacity-low">By NSTO NutStudio</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/19QNGWBETZ/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/487482899_1332200861301579_5264347872417702531_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>BNK48 & CGM48 Fan Festival 2025</p>
+                                    <p class="opacity-low">By Mr.Aunn</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
+
+                    <div class="img-box tabcontent Event">
+                        <a href="https://www.facebook.com/share/p/19XZubvs7Y/">                                
+                            <img src="https://img5.pic.in.th/file/secure-sv1/488044184_632893542880423_5026879875050765813_n.jpg" class="gallery">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <p>BNK48 & CGM48 Fan Festival 2025</p>
+                                    <p class="opacity-low">By FoTa_J</p>
+                                </div>
+                            </div>                             
+                        </a>
+                    </div>
 
                     <div class="img-box tabcontent formal">
                         <a href="https://www.facebook.com/share/p/18hph9NRLy/">
@@ -97,7 +306,7 @@
 
                     <div class="img-box tabcontent formal">
                         <a href="https://www.facebook.com/share/p/15sVrU9Cdm/">
-                            <img src="https://img5.pic.in.th/file/secure-sv1/c2xarx2y.th.png" class="gallery">
+                            <img src="https://img5.pic.in.th/file/secure-sv1/494697742_1232369268891258_3290803295130971306_n.jpg" class="gallery">
                             <div class="transparent-box">
                                 <div class="caption">
                                     <p>Yumeko Jabami</p>
@@ -109,7 +318,7 @@
 
                     <div class="img-box tabcontent formal">
                         <a href="https://www.facebook.com/share/p/1BShXxAd9t/">
-                            <img src="https://img2.pic.in.th/pic/1jdd7x9m.th.png" class="gallery">
+                            <img src="https://img2.pic.in.th/pic/499061293_1402700671423520_4565312677980936209_n.jpg" class="gallery">
                             <div class="transparent-box">
                                 <div class="caption">
                                     <p>Yumeko Jabami</p>
@@ -479,7 +688,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent event">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/S2pmMX8y8WSCkqzS/">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/449055052_122158124840225947_1956458717888406804_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -839,7 +1048,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent event">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/482A4kTjMSUj3RFS/">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/image-62df3c9cca76cc581.png" class="gallery">
                             <div class="transparent-box">
@@ -1283,7 +1492,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/fRFuaVqAJD9WBxbT/">                                
                             <img src="https://img2.pic.in.th/pic/433132530_406756358608141_8199260590589552318_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1295,7 +1504,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/HVASRjS8wAy4R855/">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/432767750_406764578607319_6785659723700109225_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1307,7 +1516,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/9eYjkajbvJ2rDkz9/">                                
                             <img src="https://img2.pic.in.th/pic/433140159_1054387652921492_315235301961696136_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1319,7 +1528,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/KonBodStation48/posts/pfbid0gLkziETXNcN3ZcY2oEKkE744o3jSC6g6w92PAFpiSoMyR8ZZoq3nqBeiw74qUksel">                                
                             <img src="https://img2.pic.in.th/pic/431763573_796248815877267_6135018039186279614_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1331,7 +1540,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/wNjoSaSLE9VoU2i6/">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/430668231_1120758915775696_2773519100616583386_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1343,7 +1552,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/PYN.Gallery/posts/pfbid02Cqk7wp1qG7Kr8M83zh2TUALQx1ZHqwXMgxCNtLqSz8HusAREkTqYBdpUscTE2mASl">                                
                             <img src="https://img2.pic.in.th/pic/429847584_813602224118813_3536258501716552339_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1355,7 +1564,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent event">
+                    <div class="img-box tabcontent Event">
                             <a href="https://www.facebook.com/PYN.Gallery/posts/pfbid0MN94okEqGH4ZTYNMVbH5yixbwv5KNsAi8VTcK7uGwKJkfCsCHp55J7gh1hY4APQil">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/425499623_796377139174655_748816165546155979_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1367,7 +1576,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent event">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/do1ecUe4CzUMNGyn/">                                
                             <img src="https://img2.pic.in.th/pic/imagedd972fcfec77db67.png" class="gallery">
                             <div class="transparent-box">
@@ -1379,7 +1588,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/kS1J9GPmPASwhogQ/">                                
                             <img src="https://img2.pic.in.th/pic/430983894_707552721461615_3556310837385205890_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1391,7 +1600,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/SnapIdolTH/posts/pfbid02qnSt1PZ7iQkHWQptBzf7DEpffJ2KuMp1NW7esZXmaoiAJPrm8zdQTF3SZkhbVupil">                                
                             <img src="https://img2.pic.in.th/pic/image-1092722f937522f653.png" class="gallery">
                             <div class="transparent-box">
@@ -1403,7 +1612,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/FjsV77s5gzeUevEF/">                                
                             <img src="https://img2.pic.in.th/pic/429753920_418800214019869_8155326179214782732_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1415,7 +1624,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/Koryaktai/posts/pfbid05PpVriaSqAu1LoX1pjhvnD9Aff1hBcDHysTEHHshWHuEnZynJ4m1Hjz1aFDFfJX9l">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/429682831_826886152786341_1929550070763625313_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1427,7 +1636,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/ncC4ybebQLXDLW3e/">                                
                             <img src="https://img2.pic.in.th/pic/429670089_980525486767090_1298125477961902015_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1439,7 +1648,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/MojiPhoto/posts/pfbid0uuQ943pAR7HvsPzr6MCfWov4n1RvVktJwqPgAKmtHCuaGfvs8VPKyKXLGijtdc1Wl">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/428685561_1041435970883327_8461064864833378940_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1451,7 +1660,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/PYN.Gallery/posts/pfbid02cazZvtckmm1bvfFpg738fXCa3udAhf8dy9U3kN1Xa2JTYgY4xAraQSTfhZjknSNLl">                                
                             <img src="https://img2.pic.in.th/pic/428623371_807673394711696_2227601766196935024_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1463,7 +1672,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/3vgf6wuK9AVFigMK/">                                
                             <img src="https://img2.pic.in.th/pic/428653103_831377869002929_1420625831635367672_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1475,7 +1684,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/XkTTVe1eN8a3AoJr/">                                
                             <img src="https://img2.pic.in.th/pic/image-16b53f013ce6e0169c.png" class="gallery">
                             <div class="transparent-box">
@@ -1487,7 +1696,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/photo/?fbid=969445494540097&set=a.969447554539891">                                
                             <img src="https://img2.pic.in.th/pic/428632819_969445481206765_7686782636701488581_nbe19c03107081de0.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1499,7 +1708,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/photo/?fbid=969446424540004&set=a.969447554539891">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/428622486_969446414540005_4370218048193862895_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1511,7 +1720,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/photo/?fbid=969969687821011&set=a.969971394487507">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/428601537_969969684487678_2890904815548097657_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1523,7 +1732,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/photo/?fbid=970469414437705&set=a.970472191104094">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/429665166_970469401104373_461543871874049571_n.jpg" class="gallery">
                             <div class="transparent-box">
@@ -1535,7 +1744,7 @@
                         </a>
                     </div>
                     
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/nFedVF8a7ZcBxKAN/">                                
                             <img src="https://img2.pic.in.th/pic/image-12f412a1a3780b936f.png" class="gallery">
                             <div class="transparent-box">
@@ -1547,7 +1756,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/aongphotoidol/posts/pfbid02qQpiDG7jtsMUKssagD9B6S9bo6WMPKd8qJZPhKi9zeJLhWoodZwybJkrRhB9M39Dl">                                
                             <img src="https://img2.pic.in.th/pic/image-18cdf2a7bba1b001e5.png" class="gallery">
                             <div class="transparent-box">
@@ -1559,7 +1768,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/do1ecUe4CzUMNGyn/">                                
                             <img src="https://img2.pic.in.th/pic/image-19288fcbbcef646b4f.png" class="gallery">
                             <div class="transparent-box">
@@ -1571,7 +1780,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/qWBrqYiPkVUD2Rsr/">                                
                             <img src="https://img2.pic.in.th/pic/image-209c4d6b83a171781c.png" class="gallery">
                             <div class="transparent-box">
@@ -1583,7 +1792,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/SwL9oNqPnda8fF2i/?">                                
                             <img src="https://img2.pic.in.th/pic/image-378b9235c8da5d609.png" class="gallery">
                             <div class="transparent-box">
@@ -1595,7 +1804,7 @@
                         </a>
                     </div>
 
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/qujqJXWgPE8RiJZa/?">                                
                             <img src="https://img5.pic.in.th/file/secure-sv1/image-1e6f9dd3105dc4e8d.png" class="gallery">
                             <div class="transparent-box">
@@ -1607,7 +1816,7 @@
                         </a>
                     </div>
                     
-                    <div class="img-box tabcontent mutsuri">
+                    <div class="img-box tabcontent Event">
                         <a href="https://www.facebook.com/share/p/a1hyZ8cBa2NoDnuJ/?">                                
                             <img src="https://img2.pic.in.th/pic/image-2c6126cd4f0470771.png" class="gallery">
                             <div class="transparent-box">
@@ -1623,18 +1832,17 @@
             </div>         
         </main>
         
-        <footer>
-            <div class="footer-content">
-                <h3>Bayby Naphaeo's | nana goto fanclub</h3>
-                <div>
-                    
+        <footer class="apple-footer">
+            <div class="footer-inner">
+                <div class="footer-links">
+                    <p>made by dem._.mo</p>
                 </div>
-                <p>love and support nana goto ⸜(｡˃ ᵕ ˂ )⸝💙 และอย่าลืมมาเป็น เขี้ยวน้อยนาแพว ของนานากันเยอะๆน้า</p>
+                <div class="footer-info">
+                    <p>© 2025 Nana Goto Fanclub. All rights reserved.</p>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>Bayby Naphaeo's &copy; 2024 designed by <span>dem._.mo</span></p>
-            </div>
-        </footer>   
+        </footer>
+        <div class="bt-footer"></div>  
 
     </body>
 </html>
