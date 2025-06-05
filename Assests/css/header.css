@@ -262,8 +262,26 @@ hr.scrolled{
 }
 
 .site-header:not(.active) .n-manu-ul hr {
-    border-top: 2px solid #29546e; /* ให้ขาวเวลาหัวข้อเป็นสีขาว */
+    border-top: 2px solid #29546e;
+
+n-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
+
+.site-header.menu-open .n-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 #info, #social, #library{
     scroll-margin-top: 70px; 
