@@ -37,9 +37,10 @@ main{
 }
   
 .gallery-image {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
   
 .gallery-image img {
@@ -51,7 +52,6 @@ main{
   
 .img-box {
   box-sizing: content-box;
-  margin: 10px;
   height: 225px;
   width: 300px;
   overflow: hidden;
@@ -108,7 +108,7 @@ main{
   
 .img-box:hover {
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 12px;
 }
   
 .caption > p:nth-child(2) {
