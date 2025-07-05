@@ -1,0 +1,57 @@
+.collaboration {
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 12px;
+    background-color: #f8fafc;
+    color: #94a3b8;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    background-color: #2b3c5e;
+    color: #ffffff;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.container, .container-fluid {
+    --bs-gutter-x: 3rem;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+p {
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+    margin: 0;
+}
+
+.text-nowrap a {
+    text-decoration: none;
+    color: #94a3b8;
+}
+
+.ft-license {
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+p {
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+    margin: 0;
+}
+
+.ft-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1280px;
+    padding: 0 24px;
+    flex-direction: column;
+}
